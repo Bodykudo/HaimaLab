@@ -1,4 +1,6 @@
-<img src="https://i.imgur.com/6IpIo7H.png" align="center" />
+<div style=" display:flex;align-items:center;justify-content:center;">
+  <img src="https://i.imgur.com/6IpIo7H.png"/>
+</div>
 
 # HaimaLab
 
