@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/6IpIo7H.png" align="center" />
+
 # HaimaLab
 
 Welcome to the HaimaLab project! This system aims to streamline and manage the operations of a medical hematology lab, providing various functionalities for different types of users. The system includes login capabilities, a dashboard for quick access to relevant information, and specific sections for patients, doctors, nurses, devices, and administrators.
