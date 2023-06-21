@@ -25,7 +25,7 @@ HaimaLab offers the following functionalities:
 
 ## Installation
 
-To install and run the Medical Lab Information System locally, follow these steps:
+To install and run the HaimaLab locally, follow these steps:
 
 1. Clone the project repository.
 2. Navigate to the project directory.
