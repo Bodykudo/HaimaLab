@@ -1,6 +1,6 @@
 <div align="center">
 <a href="[https://github.com/AbdallahHemdan/Orchestra](https://github.com/Bodykudo/HaimaLab)" rel="noopener">
-  ![Component 16]([https://user-images.githubusercontent.com/40190772/104846822-22d3e800-58e5-11eb-9c6c-b7de610bd483.png](https://i.imgur.com/6IpIo7H.png))
+  ([https://user-images.githubusercontent.com/40190772/104846822-22d3e800-58e5-11eb-9c6c-b7de610bd483.png](https://i.imgur.com/6IpIo7H.png))
 </div>
 
 # HaimaLab
