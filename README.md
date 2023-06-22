@@ -49,8 +49,6 @@ npm run dev
 
 ## Contributors
 
-## Contributors
-
 We would like to acknowledge the following individuals for their contributions to the Medical Lab Information System project:
 
 <table>
