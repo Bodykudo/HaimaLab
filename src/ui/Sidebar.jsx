@@ -71,7 +71,7 @@ const SidebarToggleButton = styled.button`
     cursor: pointer;
     position: absolute;
     left: 5%;
-    top: 1%;
+    top: 1.3%;
     z-index: 10;
     box-shadow: var(--shadow-welo);
     border-radius: var(--border-radius-md);

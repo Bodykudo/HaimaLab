@@ -153,7 +153,7 @@ function UserProfile() {
         user.MCH
       } pg, and mean corpuscular hemoglobin concentration (MCHC) is ${
         user.MCHC
-      } g/dL. Can you help me know if something is wrong with me, and what cautions shoul I take?`;
+      } g/dL. Can you help me know if something is wrong with me, and what cautions should I take?`;
       handleCopy(message);
     } else {
       let message = `Good day, Apollo. I have a patient whose age is ${calculateAge(

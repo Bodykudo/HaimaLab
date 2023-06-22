@@ -10,6 +10,7 @@ import {
   Tooltip,
 } from 'recharts';
 import { useDarkMode } from '../../context/DarkModeContext';
+import { useEffect, useState } from 'react';
 
 const ChartBox = styled.div`
   /* Box */
@@ -92,13 +93,24 @@ function prepareData(startData, stays) {
 
 function PatientsChart({ confirmedStays }) {
   const { isDarkMode } = useDarkMode();
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const startData = isDarkMode ? startDataDark : startDataLight;
   const data = prepareData(startData, confirmedStays);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <ChartBox>
       <Heading as="h2">Patients gender distribution</Heading>
-      <ResponsiveContainer width="100%" height={240}>
+      <ResponsiveContainer width="100%" height={screenWidth > 576 ? 240 : 380}>
         <PieChart>
           <Pie
             data={data}
@@ -106,8 +118,8 @@ function PatientsChart({ confirmedStays }) {
             dataKey="value"
             innerRadius={85}
             outerRadius={110}
-            cx="40%"
-            cy="50%"
+            cx={screenWidth > 576 ? '40%' : '50%'}
+            cy={screenWidth > 576 ? '50%' : '50%'}
             paddingAngle={3}
           >
             {data.map((entry) => (
@@ -116,9 +128,9 @@ function PatientsChart({ confirmedStays }) {
           </Pie>
           <Tooltip />
           <Legend
-            verticalAlign="middle"
-            align="right"
-            width="30%"
+            verticalAlign={screenWidth > 576 ? 'middle' : 'bottom'}
+            align={screenWidth > 576 ? 'right' : 'center'}
+            width={screenWidth > 576 ? '30%' : '60%'}
             layout="vertical"
             iconSize={15}
             iconType="circle"
