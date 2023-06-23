@@ -15,7 +15,7 @@ export function useUsers(userRole) {
       : { field: 'sex', value: filterValue, method: 'eq' };
 
   // Sort
-  const sortByRaw = searchParams.get('sortBy') || 'fullName-desc';
+  const sortByRaw = searchParams.get('sortBy') || 'fullName-asc';
   const [field, direction] = sortByRaw.split('-');
   const sortBy = { field, direction };
 

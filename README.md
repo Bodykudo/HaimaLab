@@ -56,9 +56,7 @@ npm run dev
 </p>
 
 
-## Contributors
-
-We would like to acknowledge the following individuals for their contributions to the Medical Lab Information System project:
+We would like to acknowledge the following individuals for their contributions to the HaimaLab project:
 
 <table>
   <tr>
